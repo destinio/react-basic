@@ -34,6 +34,8 @@ https://reactjs.org/docs/react-dom.html
 
 ### OLD REACT ☠️
 
+<img src="https://i.giphy.com/media/xT9IgGueIvhb8OBhv2/giphy.gif" width="400px" />
+
 ### Add the following to the end of your `index.html` `<head>` section
 
 https://unpkg.com
