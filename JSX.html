@@ -1,0 +1,19 @@
+<body>
+  <div id="root"></div>
+
+  <script src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <script type="text/babel" src="./main.js">
+        const ROOT = document.querySelector('#root')
+
+    function App() {
+      const [name, setName] = React.useState('Joe')
+
+      return <h1 onClick={() => setName('Jestin')}>{name}</h1>
+    }
+
+    ReactDOM.render(<App />, ROOT)
+  </script>
+</body>
