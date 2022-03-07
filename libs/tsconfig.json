@@ -1,9 +1,0 @@
-{
-  "compilerOptions": {
-    "target": "ES5",
-    "outDir": "dist",
-    "jsx": "react",
-    "lib": ["DOM", "ES2020"],
-    "module": "ES2020"
-  }
-}
