@@ -7,12 +7,22 @@
   <script>
     const ROOT = document.querySelector('#root')
 
-    const reactHeaderElement = React.createElement('h1', null, 'Hello World')
+    function App() {
+      const [name, setName] = React.useState('Mike')
+      const reactHeaderElement = React.createElement('h1', null, name)
 
-    const reactElement = React.createElement('div', null, reactHeaderElement)
+      const reactElement = React.createElement(
+        'div',
+        {
+          onClick: () => setName('Destin'),
+          className: 'joe',
+        },
+        reactHeaderElement
+      )
 
-    console.log(reactElement)
+      return reactElement
+    }
 
-    ReactDOM.render(reactElement, ROOT)
+    ReactDOM.render(React.createElement(App), ROOT)
   </script>
 </body>
